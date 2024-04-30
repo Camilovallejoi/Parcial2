@@ -1,0 +1,42 @@
+/* src/app/components/content/content.component.css */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  
+  
+a {
+    text-decoration: none;
+  }
+  
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  
+  .icon-container a {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .icon-container a:hover {
+    color: #007bff;
+  }
+  

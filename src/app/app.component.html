@@ -180,6 +180,25 @@
 <main class="main">
   <div class="content">
     <div class="left-side">
+      <app-menu-bar></app-menu-bar>
+      <app-footer></app-footer>
+      <div style="text-align: center; color: red;">
+        <h2>Contenido</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4" *ngFor="let producto of productos">
+            <div class="card">
+              <img [src]="producto.image" class="card-img-top" style="height: 300px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">{{ producto.title }}</h5>
+                <p class="card-text text-right">{{ producto.price }}</p>
+                <a href="#" class="btn btn-primary" style="text-decoration: none;">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 982 239"
